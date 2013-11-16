@@ -1,9 +1,10 @@
 Pinterestrpm::Application.routes.draw do
   
+  devise_for :users
   get "pages/index"
-root 'pages#index'
+  root 'pages#index'
 
-get "pagina2" => 'pages#pagina2'
+  get "pagina2" => 'pages#pagina2'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
